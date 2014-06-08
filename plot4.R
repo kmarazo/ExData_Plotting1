@@ -1,4 +1,4 @@
-par(mfrow = c(2, 2), mar = c(3, 3, 1, 1), oma = c(0, 0, 2, 0)) 
+par(mfrow = c(2, 2), mar = c(3, 3, 1, 1), oma = c(0, 0, 1, 0)) 
 
 with(data, {
   # insert first plot
@@ -18,7 +18,7 @@ with(data, {
   legend("topright",
          col = c("black", "blue", "red"), 
          legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-         lwd=2, cex=0.5, bty="n")
+         lwd=2, cex=0.75, bty="n")
   
   # insert fourth plot
   plot(dateTimes, Global_reactive_power, type="n", xlab="datetime", ylab="Global_reactive_power", main = "")
